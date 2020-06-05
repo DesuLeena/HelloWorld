@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('build') {
+      steps {
+        bat 'HelloWorldTest.bat'
+      }
+    }
+
   }
 }
